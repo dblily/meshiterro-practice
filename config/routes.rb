@@ -9,4 +9,6 @@ Rails.application.routes.draw do
     resources :post_comments, only: [:create, :destroy] # post_imagesにcommentするため、doとendで挟んで親子関係にする
   end
 
+  resources :users, only: [:show, :edit, :update]
+
 end
